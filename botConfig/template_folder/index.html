@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens do sistema</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body class="mt-5">
+
+    <h1>Atualizar mensagens do sistema</h1>
+
+    <form class="campos" method="POST" action="/atualizar">
+
+
+        <div class="parent m-5">
+            <div class="div1">
+                <h5 for="menu_saudacao">Menu de Saudação:</h5>
+                <textarea name="menu_saudacao" id="menu_saudacao"
+                    class="text-area">{{ config.menu_saudacao }}</textarea>
+            </div>
+
+            <div class="div2">
+                <h5 for="opt_1">Opção 1:</h5>
+                <textarea name="opt_1" id="opt_1" class="text-area">{{ config.opt_1 }}</textarea>
+            </div>
+
+            <div class="div3">
+                <h5 for="opt_2">Opção 2:</h5>
+                <textarea name="opt_2" id="opt_2" class="text-area">{{ config.opt_2 }}</textarea>
+            </div>
+
+            <div class="div4">
+                <h5 for="opt_3">Opção 3:</h5>
+                <textarea name="opt_3" id="opt_3" class="text-area">{{ config.opt_3 }}</textarea>
+            </div>
+
+            <div class="div5">
+                <h5 for="opt_4">Opção 4:</h5>
+                <textarea name="opt_4" id="opt_4" class="text-area">{{ config.opt_4 }}</textarea>
+            </div>
+
+            <div class="div6">
+                <h5 for="opt_5">Opção 5:</h5>
+                <textarea name="opt_5" id="opt_5" class="text-area">{{ config.opt_5 }}</textarea>
+            </div>
+
+            <div class="div7">
+                <h5 for="opt_6">Opção 6:</h5>
+                <textarea name="opt_6" id="opt_6" class="text-area">{{ config.opt_6 }}</textarea>
+            </div>
+
+            <div class="div8">
+                <h5 for="retorno">Retorno:</h5>
+                <textarea name="retorno" id="retorno" class="text-area">{{ config.retorno }}</textarea>
+            </div>
+
+        </div>
+
+        <div class="center-button mb-2">
+            <button type="submit" class="btn btn-primary">Atualizar</button>
+        </div>
+
+
+    </form>
+
+    <form class="botoes mb-5" method="post" action="/desligar">
+        <button type="submit" class="btn btn-danger">Fechar configurações</button>
+    </form>
+
+</body>
+
+</html>
