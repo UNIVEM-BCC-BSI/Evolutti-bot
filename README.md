@@ -1,4 +1,4 @@
-# WhatsAppBot-EvoluttiBot
+# EvoluttiBot
 
 Antes de iniciar, é necessário ter o Python instalado em sua máquina.
 o seu download pode ser feito a partir do link:
