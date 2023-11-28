@@ -27,3 +27,6 @@ playwright install
 ```bash
 pip install Flask
 ```
+
+E pronto!<br>
+O aplicativo já pode ser usado
